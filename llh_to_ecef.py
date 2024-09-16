@@ -65,9 +65,9 @@ def llh_to_ecef(lat_deg, lon_deg, hae_km):
     return r_x_km, r_y_km, r_z_km 
 
 if  len(sys.argv)==4:
-    r_x_km = float(sys.argv[1])
-    r_y_km = float(sys.argv[2])
-    r_z_km = float(sys.argv[3])
+    lat_deg = float(sys.argv[1])
+    lon_deg = float(sys.argv[2])
+    hae_km = float(sys.argv[3])
     print("Arguments set")
 else:
     print(\
